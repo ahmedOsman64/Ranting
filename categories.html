@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories - AO Rants</title>
+    <meta name="description" content="Browse rants by category - from neighbor drama to tech fails, find the perfect rant for your mood.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-container">
+                <a href="index.html" class="logo">AO</a>
+                
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="top-rants.html">Top Rants</a></li>
+                    <li><a href="submit.html">Submit</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><button class="theme-toggle" aria-label="Toggle theme">🌙 Dark</button></li>
+                </ul>
+                
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                    ☰
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="padding: 4rem 0;">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Browse by Category</h1>
+                <p class="hero-subtitle">
+                    Find the perfect rant for your mood. From everyday annoyances to hilarious mishaps.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Pills -->
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <div class="filter-pills">
+                <button class="pill active" data-category="All">All</button>
+                <button class="pill" data-category="Neighbors">🏠 Neighbors</button>
+                <button class="pill" data-category="Chores">🧹 Chores</button>
+                <button class="pill" data-category="Bills">💸 Bills</button>
+                <button class="pill" data-category="Food">🍕 Food</button>
+                <button class="pill" data-category="Tech">💻 Tech</button>
+                <button class="pill" data-category="Random">🎲 Random</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rants Grid -->
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <div class="rant-grid">
+                <!-- Rants will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Empty State (Hidden by default) -->
+    <section class="section" style="display: none;" id="empty-state">
+        <div class="container">
+            <div class="card" style="text-align: center; padding: 3rem;">
+                <h3>No Rants Found</h3>
+                <p style="color: var(--text-muted); margin-bottom: 2rem;">
+                    Looks like this category is still waiting for its first rant. Why not be the pioneer?
+                </p>
+                <a href="submit.html" class="btn btn-primary">Submit the First Rant</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Queue Toggle Button (Hidden by default) -->
+    <button class="queue-toggle" style="display: none;" aria-label="Open rant queue">
+        <span>📋</span>
+        <span class="queue-count">0</span>
+    </button>
+
+    <!-- Queue Panel -->
+    <div class="queue-panel">
+        <div class="queue-header">
+            <h3>Rant Queue</h3>
+            <button class="queue-close" aria-label="Close queue panel">×</button>
+        </div>
+        <div class="queue-items">
+            <p style="color: var(--text-muted);">No rants in queue yet.</p>
+        </div>
+        <div style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--glass-border);">
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">
+                Ready to submit your queued rants?
+            </p>
+            <a href="submit.html" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                Go to Submit Page
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>AO Rants</h4>
+                    <p style="color: var(--text-muted);">
+                        Your go-to platform for sharing everyday home struggles and funny moments. 
+                        Because laughter is the best medicine for life's little annoyances.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="categories.html">Browse Categories</a></li>
+                        <li><a href="top-rants.html">Top Rants</a></li>
+                        <li><a href="submit.html">Submit a Rant</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="mailto:ahmed@aorants.com">Email</a></li>
+                        <li><a href="#" aria-label="GitHub">GitHub</a></li>
+                        <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span class="current-year">2024</span> AO Rants by Ahmed Osman. Made with ☕ in Mogadishu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

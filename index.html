@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AO Rants - Home Ranting Platform</title>
+    <meta name="description" content="Rant freely, laugh loudly, share openly. Everyday home struggles and funny moments curated by Ahmed Osman.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-container">
+                <a href="index.html" class="logo">AO</a>
+                
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="top-rants.html">Top Rants</a></li>
+                    <li><a href="submit.html">Submit</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><button class="theme-toggle" aria-label="Toggle theme">🌙 Dark</button></li>
+                </ul>
+                
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                    ☰
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Rant Freely. Laugh Loudly. Share Openly.</h1>
+                <p class="hero-subtitle">
+                    Everyday home struggles and funny moments — curated by Ahmed Osman.
+                </p>
+                
+                <div class="location-chip">
+                    <span>📍</span>
+                    <span>Mogadishu • Always Open</span>
+                </div>
+                
+                <div class="hero-ctas">
+                    <a href="categories.html" class="btn btn-primary">
+                        <span>🔍</span>
+                        Explore Rants
+                    </a>
+                    <a href="submit.html" class="btn btn-secondary">
+                        <span>✍️</span>
+                        Submit Rant
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 3D Chat Bubble -->
+        <div class="chat-bubble-container">
+            <div class="chat-bubble">
+                <div class="steam">
+                    <div class="steam-bubble"></div>
+                    <div class="steam-bubble"></div>
+                    <div class="steam-bubble"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section class="section">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 2rem;">What's Trending</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>🔥 Hot Rants</h3>
+                    <p>The most talked-about home struggles this week. From mysterious disappearing food to neighbor drama.</p>
+                    <a href="categories.html" class="btn btn-ghost">Browse All →</a>
+                </div>
+                
+                <div class="card">
+                    <h3>😂 Comedy Gold</h3>
+                    <p>Hilarious everyday moments that'll make you laugh and relate. Because we've all been there.</p>
+                    <a href="top-rants.html" class="btn btn-ghost">See Top Picks →</a>
+                </div>
+                
+                <div class="card">
+                    <h3>💭 Share Your Story</h3>
+                    <p>Got a rant brewing? Join our community and let it all out. Your story might be the next viral hit!</p>
+                    <a href="submit.html" class="btn btn-ghost">Start Ranting →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Stats -->
+    <section class="section" style="background: var(--bg-surface);">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-number">100+</span>
+                    <span class="stat-label">Rants Shared</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Categories</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Fun Guaranteed</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Queue Toggle Button (Hidden by default) -->
+    <button class="queue-toggle" style="display: none;" aria-label="Open rant queue">
+        <span>📋</span>
+        <span class="queue-count">0</span>
+    </button>
+
+    <!-- Queue Panel -->
+    <div class="queue-panel">
+        <div class="queue-header">
+            <h3>Rant Queue</h3>
+            <button class="queue-close" aria-label="Close queue panel">×</button>
+        </div>
+        <div class="queue-items">
+            <p style="color: var(--text-muted);">No rants in queue yet.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>AO Rants</h4>
+                    <p style="color: var(--text-muted);">
+                        Your go-to platform for sharing everyday home struggles and funny moments. 
+                        Because laughter is the best medicine for life's little annoyances.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="categories.html">Browse Categories</a></li>
+                        <li><a href="top-rants.html">Top Rants</a></li>
+                        <li><a href="submit.html">Submit a Rant</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="mailto:ahmed@aorants.com">Email</a></li>
+                        <li><a href="#" aria-label="GitHub">GitHub</a></li>
+                        <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span class="current-year">2025</span> AO Rants by Ahmed Osman. Made with ☕ in Mogadishu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

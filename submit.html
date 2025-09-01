@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Rant - AO Rants</title>
+    <meta name="description" content="Share your everyday home struggles and funny moments with our community.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-container">
+                <a href="index.html" class="logo">AO</a>
+                
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="top-rants.html">Top Rants</a></li>
+                    <li><a href="submit.html">Submit</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><button class="theme-toggle" aria-label="Toggle theme">🌙 Dark</button></li>
+                </ul>
+                
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                    ☰
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="padding: 4rem 0;">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Share Your Rant</h1>
+                <p class="hero-subtitle">
+                    Turn your frustration into community connection. Your story might be exactly what someone else needs to hear.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Submit Form -->
+    <section class="section">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr; max-width: 800px; margin: 0 auto;">
+                <div class="card" style="padding: 3rem;">
+                    <form class="submit-form" novalidate>
+                        <div class="form-group">
+                            <label for="name" class="form-label">Your Name *</label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                class="form-input" 
+                                required 
+                                placeholder="How should we credit you?"
+                                aria-describedby="name-help"
+                            >
+                            <small id="name-help" style="color: var(--text-muted); font-size: 0.85rem;">
+                                This will be shown with your rant (you can use a nickname)
+                            </small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address *</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                class="form-input" 
+                                required 
+                                placeholder="your.email@example.com"
+                                aria-describedby="email-help"
+                            >
+                            <small id="email-help" style="color: var(--text-muted); font-size: 0.85rem;">
+                                We'll never share your email or spam you
+                            </small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="rant-title" class="form-label">Rant Title *</label>
+                            <input 
+                                type="text" 
+                                id="rant-title" 
+                                name="rant-title" 
+                                class="form-input" 
+                                required 
+                                placeholder="Give your rant a catchy title..."
+                                aria-describedby="title-help"
+                            >
+                            <small id="title-help" style="color: var(--text-muted); font-size: 0.85rem;">
+                                Make it attention-grabbing but not too long
+                            </small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="category" class="form-label">Category *</label>
+                            <select id="category" name="category" class="form-select" required>
+                                <option value="">Choose a category...</option>
+                                <option value="Neighbors">🏠 Neighbors</option>
+                                <option value="Chores">🧹 Chores</option>
+                                <option value="Bills">💸 Bills</option>
+                                <option value="Food">🍕 Food</option>
+                                <option value="Tech">💻 Tech</option>
+                                <option value="Random">🎲 Random</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="rant-text" class="form-label">Your Rant *</label>
+                            <textarea 
+                                id="rant-text" 
+                                name="rant-text" 
+                                class="form-textarea" 
+                                required 
+                                placeholder="Tell us what happened... Don't hold back, but keep it fun and relatable!"
+                                aria-describedby="rant-help"
+                                rows="6"
+                            ></textarea>
+                            <small id="rant-help" style="color: var(--text-muted); font-size: 0.85rem;">
+                                Share the details, your emotions, and what made it funny or frustrating
+                            </small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="notes" class="form-label">Additional Notes</label>
+                            <textarea 
+                                id="notes" 
+                                name="notes" 
+                                class="form-textarea" 
+                                placeholder="Any extra context, follow-up, or just additional thoughts..."
+                                aria-describedby="notes-help"
+                                rows="3"
+                            ></textarea>
+                            <small id="notes-help" style="color: var(--text-muted); font-size: 0.85rem;">
+                                Optional - anything else you'd like to add
+                            </small>
+                        </div>
+
+                        <div style="margin: 2rem 0; padding: 1.5rem; background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: var(--radius-ui);">
+                            <h4 style="margin-bottom: 1rem; color: var(--color-primary);">📋 Quick Reminders</h4>
+                            <ul style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6;">
+                                <li>Keep it respectful and fun</li>
+                                <li>Focus on situations, not personal attacks</li>
+                                <li>The funnier and more relatable, the better</li>
+                                <li>Don't share others' personal information</li>
+                            </ul>
+                        </div>
+
+                        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                            <button type="submit" class="btn btn-primary">
+                                <span>🚀</span>
+                                Submit Rant
+                            </button>
+                            <button type="reset" class="btn btn-ghost">
+                                <span>🗑️</span>
+                                Clear Form
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section class="section" style="background: var(--bg-surface);">
+        <div class="container">
+            <div class="card-grid">
+                <div class="card">
+                    <h3>💡 Writing Tips</h3>
+                    <ul style="color: var(--text-muted); line-height: 1.6;">
+                        <li>Start with the setup - where were you, what were you doing?</li>
+                        <li>Build to the moment of frustration or absurdity</li>
+                        <li>Include your reaction and thoughts</li>
+                        <li>End with reflection or humor</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h3>🎯 What Works</h3>
+                    <ul style="color: var(--text-muted); line-height: 1.6;">
+                        <li>Specific details that paint a picture</li>
+                        <li>Universal experiences we can all relate to</li>
+                        <li>Self-deprecating humor</li>
+                        <li>Unexpected twists or realizations</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h3>🚫 Avoid These</h3>
+                    <ul style="color: var(--text-muted); line-height: 1.6;">
+                        <li>Naming specific people or places</li>
+                        <li>Genuinely mean-spirited content</li>
+                        <li>Very personal or sensitive information</li>
+                        <li>Rants that are just complaining without humor</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Queue Toggle Button (Hidden by default) -->
+    <button class="queue-toggle" style="display: none;" aria-label="Open rant queue">
+        <span>📋</span>
+        <span class="queue-count">0</span>
+    </button>
+
+    <!-- Queue Panel -->
+    <div class="queue-panel">
+        <div class="queue-header">
+            <h3>Rant Queue</h3>
+            <button class="queue-close" aria-label="Close queue panel">×</button>
+        </div>
+        <div class="queue-items">
+            <p style="color: var(--text-muted);">No rants in queue yet.</p>
+        </div>
+        <div style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--glass-border);">
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">
+                <strong>Total queued rants:</strong> <span id="queue-total">0</span>
+            </p>
+            <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1rem;">
+                These rants were added from the Categories or Top Rants pages. You can reference them while writing your own rant!
+            </p>
+            <button class="btn btn-ghost" style="width: 100%; justify-content: center;" onclick="clearQueue()">
+                Clear All
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>AO Rants</h4>
+                    <p style="color: var(--text-muted);">
+                        Your go-to platform for sharing everyday home struggles and funny moments. 
+                        Because laughter is the best medicine for life's little annoyances.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="categories.html">Browse Categories</a></li>
+                        <li><a href="top-rants.html">Top Rants</a></li>
+                        <li><a href="submit.html">Submit a Rant</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="mailto:ahmed@aorants.com">Email</a></li>
+                        <li><a href="#" aria-label="GitHub">GitHub</a></li>
+                        <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span class="current-year">2024</span> AO Rants by Ahmed Osman. Made with ☕ in Mogadishu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Additional function for clearing queue
+        function clearQueue() {
+            rantQueue = [];
+            updateQueueDisplay();
+            showToast('Queue cleared!', 'success');
+        }
+        
+        // Update queue total display
+        function updateQueueTotal() {
+            const queueTotal = document.getElementById('queue-total');
+            if (queueTotal) {
+                queueTotal.textContent = rantQueue.length;
+            }
+        }
+        
+        // Override the updateQueueDisplay function to include total
+        const originalUpdateQueueDisplay = updateQueueDisplay;
+        updateQueueDisplay = function() {
+            originalUpdateQueueDisplay();
+            updateQueueTotal();
+        };
+    </script>
+</body>
+</html>

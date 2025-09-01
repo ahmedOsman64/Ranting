@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - AO Rants</title>
+    <meta name="description" content="Get in touch with Ahmed Osman and the AO Rants team. We'd love to hear from you!">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-container">
+                <a href="index.html" class="logo">AO</a>
+                
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="top-rants.html">Top Rants</a></li>
+                    <li><a href="submit.html">Submit</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><button class="theme-toggle" aria-label="Toggle theme">🌙 Dark</button></li>
+                </ul>
+                
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                    ☰
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="padding: 4rem 0;">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Get in Touch</h1>
+                <p class="hero-subtitle">
+                    Questions, suggestions, or just want to share your thoughts? We'd love to hear from you!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="section">
+        <div class="container">
+            <div class="card-grid">
+                <div class="card" style="text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">📧</div>
+                    <h3>Email Us</h3>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
+                        Drop us a line anytime. We usually respond within 24 hours.
+                    </p>
+                    <a href="mailto:ahmed@aorants.com" class="btn btn-primary">
+                        ahmed@aorants.com
+                    </a>
+                </div>
+                
+                <div class="card" style="text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">📱</div>
+                    <h3>Call or Text</h3>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
+                        For urgent matters or if you prefer talking it out.
+                    </p>
+                    <a href="tel:+252123456789" class="btn btn-secondary">
+                        +252 123 456 789
+                    </a>
+                </div>
+                
+                <div class="card" style="text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🌐</div>
+                    <h3>Social Media</h3>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
+                        Follow us for updates and behind-the-scenes content.
+                    </p>
+                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                        <a href="#" class="btn btn-ghost" aria-label="GitHub">GitHub</a>
+                        <a href="#" class="btn btn-ghost" aria-label="LinkedIn">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Map -->
+    <section class="section" style="background: var(--bg-surface);">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 3rem;">📍 Our Location</h2>
+            <div class="card-grid" style="grid-template-columns: 1fr 1fr; align-items: center;">
+                <div>
+                    <h3>Mogadishu Community Area</h3>
+                    <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 2rem;">
+                        Based in the heart of Mogadishu, we're part of a vibrant community that knows a thing or two 
+                        about life's daily adventures. While we work remotely most of the time, our roots are firmly 
+                        planted in this amazing city.
+                    </p>
+                    
+                    <div style="margin-bottom: 1rem;">
+                        <strong>Address:</strong><br>
+                        <span style="color: var(--text-muted);">
+                            Mogadishu Community Center<br>
+                            Wadada Xorriyadda, Mogadishu<br>
+                            Somalia
+                        </span>
+                    </div>
+                    
+                    <div style="margin-bottom: 1rem;">
+                        <strong>Hours:</strong><br>
+                        <span style="color: var(--text-muted);">
+                            Monday - Friday: 9:00 AM - 6:00 PM<br>
+                            Saturday: 10:00 AM - 4:00 PM<br>
+                            Sunday: Closed (we're probably dealing with our own rants!)
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card" style="padding: 2rem; text-align: center; min-height: 300px; display: flex; flex-direction: column; justify-content: center; background: linear-gradient(135deg, var(--color-primary), var(--color-accent)); color: white; position: relative; overflow: hidden;">
+                    <!-- Offline Map Placeholder -->
+                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.1;">
+                        <svg viewBox="0 0 400 300" style="width: 100%; height: 100%;">
+                            <!-- Simple map-like illustration -->
+                            <rect x="0" y="0" width="400" height="300" fill="currentColor"/>
+                            <circle cx="100" cy="80" r="20" fill="rgba(255,255,255,0.3)"/>
+                            <circle cx="300" cy="120" r="15" fill="rgba(255,255,255,0.3)"/>
+                            <circle cx="200" cy="200" r="25" fill="rgba(255,255,255,0.5)"/>
+                            <path d="M50,150 Q200,100 350,180" stroke="rgba(255,255,255,0.3)" stroke-width="3" fill="none"/>
+                            <path d="M80,250 Q150,200 250,220" stroke="rgba(255,255,255,0.3)" stroke-width="2" fill="none"/>
+                        </svg>
+                    </div>
+                    
+                    <div style="position: relative; z-index: 2;">
+                        <div style="font-size: 4rem; margin-bottom: 1rem;">🗺️</div>
+                        <h3 style="color: white; margin-bottom: 1rem;">Mogadishu Community Area</h3>
+                        <p style="opacity: 0.9; margin-bottom: 1.5rem;">
+                            Interactive map coming soon! For now, we're located in the bustling heart of Mogadishu.
+                        </p>
+                        <div style="background: rgba(255,255,255,0.2); padding: 0.5rem 1rem; border-radius: var(--radius-pill); display: inline-block;">
+                            📍 Always Open for Rants
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 3rem;">❓ Frequently Asked Questions</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h4>How do I submit a rant?</h4>
+                    <p style="color: var(--text-muted);">
+                        Head over to our <a href="submit.html">Submit page</a> and fill out the form. 
+                        Make sure to follow our community guidelines for the best chance of getting featured!
+                    </p>
+                </div>
+                
+                <div class="card">
+                    <h4>Can I edit my rant after submission?</h4>
+                    <p style="color: var(--text-muted);">
+                        Currently, rants can't be edited once submitted. Make sure you're happy with your 
+                        story before hitting that submit button! If there's an urgent issue, contact us directly.
+                    </p>
+                </div>
+                
+                <div class="card">
+                    <h4>How do you choose featured rants?</h4>
+                    <p style="color: var(--text-muted);">
+                        We look for rants that are funny, relatable, and follow our community guidelines. 
+                        The most engaging stories that make people laugh and feel connected tend to get featured.
+                    </p>
+                </div>
+                
+                <div class="card">
+                    <h4>Is my personal information safe?</h4>
+                    <p style="color: var(--text-muted);">
+                        Absolutely! We only display the name you choose to use with your rant. Your email 
+                        and other personal details are never shared or sold to third parties.
+                    </p>
+                </div>
+                
+                <div class="card">
+                    <h4>Can I report inappropriate content?</h4>
+                    <p style="color: var(--text-muted);">
+                        Yes, please! If you see content that violates our guidelines, send us an email 
+                        with details. We take community standards seriously.
+                    </p>
+                </div>
+                
+                <div class="card">
+                    <h4>Do you accept guest writers?</h4>
+                    <p style="color: var(--text-muted);">
+                        We're always open to collaboration! If you have ideas for regular content or 
+                        want to contribute in other ways, reach out to us via email.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="section" style="background: var(--bg-surface);">
+        <div class="container">
+            <div class="card" style="text-align: center; padding: 3rem; background: linear-gradient(135deg, var(--color-primary), var(--color-accent)); color: white;">
+                <h2 style="color: white; margin-bottom: 1rem;">Ready to Share Your Story?</h2>
+                <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.9;">
+                    Don't let that perfect rant go to waste! Our community is waiting to hear from you.
+                </p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="submit.html" class="btn" style="background: rgba(255,255,255,0.2); color: white; border: 1px solid rgba(255,255,255,0.3);">Submit Your Rant</a>
+                    <a href="categories.html" class="btn btn-secondary">Browse Existing Rants</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Queue Toggle Button (Hidden by default) -->
+    <button class="queue-toggle" style="display: none;" aria-label="Open rant queue">
+        <span>📋</span>
+        <span class="queue-count">0</span>
+    </button>
+
+    <!-- Queue Panel -->
+    <div class="queue-panel">
+        <div class="queue-header">
+            <h3>Rant Queue</h3>
+            <button class="queue-close" aria-label="Close queue panel">×</button>
+        </div>
+        <div class="queue-items">
+            <p style="color: var(--text-muted);">No rants in queue yet.</p>
+        </div>
+        <div style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--glass-border);">
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">
+                Ready to submit your queued rants?
+            </p>
+            <a href="submit.html" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                Go to Submit Page
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>AO Rants</h4>
+                    <p style="color: var(--text-muted);">
+                        Your go-to platform for sharing everyday home struggles and funny moments. 
+                        Because laughter is the best medicine for life's little annoyances.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="categories.html">Browse Categories</a></li>
+                        <li><a href="top-rants.html">Top Rants</a></li>
+                        <li><a href="submit.html">Submit a Rant</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="mailto:ahmed@aorants.com">Email</a></li>
+                        <li><a href="#" aria-label="GitHub">GitHub</a></li>
+                        <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span class="current-year">2024</span> AO Rants by Ahmed Osman. Made with ☕ in Mogadishu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
